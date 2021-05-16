@@ -1,0 +1,39 @@
+{
+  "name": "@my-company/react",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "esmodule": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rimraf dist && rimraf dist-transpiled",
+    "compile": "npm run tsc && rollup -c",
+    "tsc": "tsc -p ."
+  },
+  "peerDependencies": {
+    "react": ">=16.8.6",
+    "react-dom": ">=16.8.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "@types/node": "^12.12.38",
+    "@types/react": "^16.9.27",
+    "@types/react-dom": "^16.9.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.26.4",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "typescript": "^3.7.5"
+  }
+}
