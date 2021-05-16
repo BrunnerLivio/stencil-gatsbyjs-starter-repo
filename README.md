@@ -12,7 +12,7 @@ Stencil + GatsbyJS = <3
 
 1. Check out the code
 
-2. Run the following code
+2. Run the following commands
 
 ```bash
 npm i
@@ -22,4 +22,4 @@ npm run build
 
 # Runs the Gatsby site
 npm run serve:docs
-````
+```
